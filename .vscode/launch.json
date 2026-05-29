@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/kushal/Studies/coding-blocks",
-      "program": "/Users/kushal/Studies/coding-blocks/build/Debug/outDebug"
+      "cwd": "/Users/kushal/Studies/coding-blocks/STL",
+      "program": "/Users/kushal/Studies/coding-blocks/STL/build/Debug/outDebug"
     }
   ]
 }

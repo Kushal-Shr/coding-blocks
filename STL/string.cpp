@@ -28,5 +28,27 @@ int main()
     cout << s2.compare(s3) << endl;
     cout << (s2 < s3) << endl;
 
+    string s = "I want to have an apple juice";
+    int idx = s.find("an apple");
+    cout << idx << endl;
+
+    s.erase(idx, 9);
+
+    cout << s << endl;
+
+    for (int i = 0; i < s.length(); i++)
+    {
+        cout << s[i] << " ";
+    }
+    cout << endl;
+
+    auto it = s.begin();
+    while (it < s.end())
+    {
+        cout << *it << " ";
+        it++;
+    }
+    cout << endl;
+
     return 0;
 }

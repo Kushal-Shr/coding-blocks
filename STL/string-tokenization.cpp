@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    string s = "I am having a pretty good day,     what about you?";
+    string s = "I am having a pretty good day, what about you?";
 
     stringstream ss(s);
     string word;

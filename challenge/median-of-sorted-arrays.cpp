@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void merge(vector<int> &a, vector<int> &b, vector<int> &temp, int n)
+void merge(vector<long long> &a, vector<long long> &b, vector<long long> &temp, int n)
 {
     int i = 0, j = 0, k = 0;
 
@@ -25,7 +25,7 @@ int main()
     int n;
     cin >> n;
 
-    vector<int> a(n), b(n), temp(n * 2);
+    vector<long long> a(n), b(n), temp(n * 2);
 
     for (int i = 0; i < n; i++)
         cin >> a[i];
@@ -35,7 +35,7 @@ int main()
 
     merge(a, b, temp, n);
 
-    int med = (temp[n - 1] + temp[n]) / 2;
+    int med = n > 0 ? temp[n - 1] : -1;
 
     cout << med << endl;
 

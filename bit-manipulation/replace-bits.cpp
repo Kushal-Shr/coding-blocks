@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int n = 128, m = 21, i = 2, j = 6;
+    int n = 15, m = 2, i = 1, j = 3;
 
     int left = (~0) << (j + 1);
     int right = (1 << i) - 1;

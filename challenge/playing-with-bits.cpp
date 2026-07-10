@@ -27,39 +27,23 @@ int32_t main()
 {
     i_c_p_c();
 
-    int n;
-    cin >> n;
+    int q;
+    cin >> q;
+    int a, b;
 
-    vector<int> nums(n);
-    for (int i = 0; i < n; i++)
-        cin >> nums[i];
-
-    int num = 0;
-    for (auto ch : nums)
-        num ^= ch;
-
-    num = num & ~(num - 1);
-
-    vector<int> hasSetBits;
-    vector<int> hasNoSetBits;
-
-    for (auto ch : nums)
+    while (q--)
     {
-        if ((ch & num) > 0)
-            hasSetBits.push_back(ch);
-        else
-            hasNoSetBits.push_back(ch);
+        cin >> a >> b;
+
+        int ans = 0;
+
+        for (int i = a; i <= b; i++)
+        {
+            ans += setbits(i);
+        }
+
+        cout << ans << '\n';
     }
-
-    int num1 = 0;
-    for (auto ch : hasSetBits)
-        num1 ^= ch;
-
-    int num2 = 0;
-    for (auto ch : hasNoSetBits)
-        num2 ^= ch;
-
-    cout << num2 << " " << num1 << '\n';
 
     return 0;
 }
